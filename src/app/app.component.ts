@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'material';
+  selectedFruit!: string;
+  selectedName!: string;
+  showResult: boolean = false;
+
+  showSelection() {
+    this.showResult = !this.showResult;
+  }
+  
 }
